@@ -116,7 +116,7 @@ if run:
     with col1:
         st.subheader("Decision Boundary")
         fig1, ax1 = plt.subplots(figsize=(7, 5))
-        plot_decision_regions(X, y.astype(np.integer), clf=clf, ax=ax1, legend=2)
+        plot_decision_regions(X, y.astype(np.int64), clf=clf, ax=ax1, legend=2)
         ax1.set_xlabel("Feature 1")
         ax1.set_ylabel("Feature 2")
         ax1.set_title("How the tree carves up the space")
